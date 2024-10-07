@@ -1,0 +1,47 @@
+{
+  "name": "native_react_sdk",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Nativ npm for creating various components",
+  "main": "dist/index.js",
+  "style": "dist/index.css",
+  "scripts": {
+    "build:dev": "rollup -c --environment NODE_ENV:development",
+    "build": "rollup -c --environment NODE_ENV:production"
+  },
+  "keywords": [
+    "react",
+    "native_components"
+  ],
+  "author": "Jahir Rayhan",
+  "license": "MIT",
+  "dependencies": {
+    "@rollup/plugin-url": "^8.0.2",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.4",
+    "@babel/preset-react": "^7.24.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-replace": "^5.0.7",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.44",
+    "postcss-scss": "^4.0.9",
+    "rollup": "^2.79.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
+    "sass": "^1.78.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "files": [
+    "dist",
+    "src/assets"   
+  ]
+}
